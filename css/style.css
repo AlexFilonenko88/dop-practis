@@ -26,18 +26,49 @@ ul {
 }
 body {
   font-family: Roboto, sans-serif;
-  color: ;
 }
 
 /* Header */
 
 .header {
   color: var(--light-color-text);
+  background-color:chartreuse;
 }
 
 .header-logo{
     font-family: PT Serif, sans-serif;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 20px;
+}
+
+.header-logo-text{
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.header-contacts{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    
+}
+
+.header-contacts-link{
+    color: #ffffff;
+}
+
+.header-logo{
+    color: #ffffff;
+}
+
+.header-button{
+    font-family: inherit;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.header-nav-link{
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
 }
