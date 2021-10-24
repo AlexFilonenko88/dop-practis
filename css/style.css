@@ -1,6 +1,6 @@
 :root {
-  --light
--color-text: #fffff;
+  --light-color-text: #ffffff;
+  --black-color-text: #000000;
 }
 
 .visually-hidden {
@@ -32,43 +32,266 @@ body {
 
 .header {
   color: var(--light-color-text);
-  background-color:chartreuse;
+  background-color: chartreuse;
 }
 
-.header-logo{
-    font-family: PT Serif, sans-serif;
-    font-weight: 700;
-    font-size: 20px;
+.header-logo {
+  font-family: PT Serif, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
 }
 
-.header-logo-text{
-    font-size: 18px;
-    line-height: 21px;
+.header-logo-text {
+  font-size: 18px;
+  line-height: 21px;
 }
 
-.header-contacts{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 130%;
-    
+.header-contacts {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
 }
 
-.header-contacts-link{
-    color: #ffffff;
+.header-contacts-link {
+  color: #ffffff;
 }
 
-.header-logo{
-    color: #ffffff;
+.header-logo {
+  color: #ffffff;
 }
 
-.header-button{
-    font-family: inherit;
-    color: #ffffff;
-    background-color: transparent;
+.header-button {
+  font-family: inherit;
+  color: #ffffff;
+  background-color: transparent;
 }
 
-.header-nav-link{
-    font-size: 16px;
-    line-height: 19px;
-    color: #ffffff;
+.header-nav-link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+/* Hero */
+
+.hero > h1 {
+  background-color: tomato;
+  color: var(--light-color-text);
+  font-family: PT Serif;
+  font-weight: 700;
+  font-size: 90px;
+}
+
+.hero > p {
+  font-size: 20px;
+  color: var(--light-color-text);
+  background-color: yellow;
+  line-height: 1.1;
+}
+
+.hero-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  color: var(--light-color-text);
+  background-color: turquoise;
+  text-transform: uppercase;
+}
+
+/* Categories */
+
+.categories-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--black-color-text);
+}
+
+/* Directions */
+
+.directions {
+  background-color: rgba(112, 207, 41, 0.07);
+}
+
+.directions-title {
+  font-family: PT Serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.7;
+}
+
+.directions-title-li {
+  font-size: 16px;
+  line-height: 1.31;
+  color: #333333;
+}
+
+/* Suggestions */
+
+.suggestions {
+  background-color: green;
+}
+.suggestions-title {
+  font-family: PT Serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.33;
+}
+
+.suggestions-title-link {
+  color: var(--light-color-text);
+}
+
+.suggestions-title-h,
+.suggestions-title-p {
+  color: var(--light-color-text);
+}
+
+.suggestions-title-h {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+}
+
+.suggestions-title-p {
+  font-size: 16px;
+  line-height: 1.31;
+}
+
+.suggestions-title-hh {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 0.87;
+}
+/* Map */
+
+.map-title {
+  font-family: PT Serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.7;
+}
+
+/* About */
+
+.about-title {
+  font-family: PT Serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.33;
+}
+
+.about-p {
+  font-size: 18px;
+  line-height: 1.22;
+  color: #333333;
+}
+
+/* .about-link {
+  font-size: 16px;
+  line-height: 1.18;
+  color: #76767a;
+} */
+
+/* Gallery */
+
+.gallery {
+  background-color: rgba(63, 169, 245, 0.07);
+}
+
+.gallery-foto {
+  font-family: PT Serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.7;
+}
+
+/* Advantages */
+
+.advantages-title {
+  font-family: PT Serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 0.47;
+}
+
+.advantages-p {
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+/* Features */
+
+.features-p {
+  font-family: PT Serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.05;
+}
+
+.features-span {
+  font-family: PT Serif;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 0.36;
+  color: #64bd22;
+}
+
+/* Form */
+
+.form-title {
+  font-family: PT Serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.7;
+}
+
+.form-button {
+  background-color: #0061d9;
+  color: var(--light-color-text);
+}
+
+/* Footer */
+
+.footer {
+  background-color: #202020;
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--light-color-text);
+}
+
+.footer-title-link {
+  font-size: 16px;
+  line-height: 1.31;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-title-p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--light-color-text);
+}
+
+.footer-title-other {
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-link {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-link-a {
+  font-size: 12px;
+  line-height: 1.75;
+  color: #ffffff;
 }
