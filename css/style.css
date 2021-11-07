@@ -96,14 +96,16 @@ body {
 /* Hero */
 
 .hero {
-  background-image: url("../img/header-screen.jpg");
   max-width: 1920px;
-  margin: 0 auto;
+  height: 940px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 226px 0 33px 0;
+  color: var(--light-color-text);
+  background-image: url("../img/header-screen.jpg");
 }
 
 .hero > h1 {
-  /* background-color: tomato; */
   color: var(--light-color-text);
   font-family: PT Serif;
   font-weight: 700;
@@ -122,7 +124,6 @@ body {
   font-size: 18px;
   line-height: 1.16;
   color: var(--light-color-text);
-  background-color: turquoise;
   text-transform: uppercase;
 }
 
@@ -132,6 +133,7 @@ body {
   height: 40px;
   border: 1px solid #ffffff;
   border-radius: 50%;
+  margin: 0 auto;
 }
 
 /* Categories */
