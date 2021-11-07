@@ -17,6 +17,19 @@
   overflow: hidden;
 }
 
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
@@ -26,6 +39,14 @@ ul {
 }
 body {
   font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 1150px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Header */
@@ -74,8 +95,15 @@ body {
 
 /* Hero */
 
+.hero {
+  background-image: url("../img/header-screen.jpg");
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 226px 0 33px 0;
+}
+
 .hero > h1 {
-  background-color: tomato;
+  /* background-color: tomato; */
   color: var(--light-color-text);
   font-family: PT Serif;
   font-weight: 700;
@@ -98,7 +126,19 @@ body {
   text-transform: uppercase;
 }
 
+.hero-down {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
 /* Categories */
+
+.categories {
+  padding: 64px;
+}
 
 .categories-title {
   font-weight: 500;
@@ -107,10 +147,28 @@ body {
   color: var(--black-color-text);
 }
 
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -32px;
+  margin-bottom: -32px;
+}
+
+.categories-item {
+  width: 256px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  border: 1px solid #d9d9de;
+  border-radius: 6px;
+}
+.categories-container {
+  padding: 13px 19px 16px 19px;
+}
 /* Directions */
 
 .directions {
   background-color: rgba(112, 207, 41, 0.07);
+  padding: 44px;
 }
 
 .directions-title {
@@ -118,6 +176,24 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 0.7;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.directions-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -33px;
+  margin-bottom: -37px;
+}
+.directions-item {
+  width: 252px;
+  margin-right: 33px;
+  margin-bottom: 37px;
+}
+
+.directions-icon {
+  margin-bottom: 16px;
 }
 
 .directions-title-li {
@@ -170,15 +246,27 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 0.7;
+  margin-bottom: 37px;
+  text-align: center;
 }
 
 /* About */
+
+.map {
+  padding-top: 70px;
+}
+
+.about {
+  padding-top: 70px;
+  padding-bottom: 79px;
+}
 
 .about-title {
   font-family: PT Serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.33;
+  margin-bottom: 37px;
 }
 
 .about-p {
