@@ -45,8 +45,7 @@ body {
   width: 1150px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -85,6 +84,9 @@ body {
   font-family: inherit;
   color: #ffffff;
   background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 22px;
+  padding: 12px 6px;
 }
 
 .header-nav-link {
@@ -97,7 +99,6 @@ body {
 
 .hero {
   max-width: 1920px;
-  height: 940px;
   margin-left: auto;
   margin-right: auto;
   padding: 226px 0 33px 0;
@@ -119,12 +120,25 @@ body {
   line-height: 1.1;
 }
 
+.hero-title {
+  margin-bottom: 8px;
+}
+
+.hero-title-p {
+  margin-bottom: 94px;
+}
+
 .hero-link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.16;
   color: var(--light-color-text);
   text-transform: uppercase;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  padding: 19px 53px;
+  margin: 0 0 184px 0;
+  display: inline-block;
 }
 
 .hero-down {
@@ -133,7 +147,9 @@ body {
   height: 40px;
   border: 1px solid #ffffff;
   border-radius: 50%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 33px;
 }
 
 /* Categories */
@@ -268,20 +284,19 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 1.33;
-  margin-bottom: 37px;
+  margin-bottom: 21px;
 }
 
-.about-p {
+.about-p,
+.about-p-p {
   font-size: 18px;
   line-height: 1.22;
   color: #333333;
 }
 
-/* .about-link {
-  font-size: 16px;
-  line-height: 1.18;
-  color: #76767a;
-} */
+.about-p-p {
+  margin-bottom: 55px;
+}
 
 /* Gallery */
 
