@@ -325,13 +325,32 @@ body {
   line-height: 1.22;
 }
 
+.advantages {
+  border-bottom: 1px solid #d9d9de;
+}
+
 /* Features */
+
+.features-list {
+  display: flex;
+  padding-top: 41px;
+  padding-bottom: 85px;
+}
+
+.features-item {
+  margin-right: 50px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
 
 .features-p {
   font-family: PT Serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.05;
+  margin-top: 1px;
 }
 
 .features-span {
