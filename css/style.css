@@ -52,13 +52,27 @@ body {
 
 .header {
   color: var(--light-color-text);
-  background-color: chartreuse;
+
+  position: absolute;
+  width: 100%;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+
+  padding: 13px 0 14px 0;
 }
 
 .header-logo {
+  display: flex;
+  align-items: center;
+
   font-family: PT Serif, sans-serif;
   font-weight: 700;
   font-size: 20px;
+
+  color: #ffffff;
 }
 
 .header-logo-text {
@@ -67,29 +81,53 @@ body {
 }
 
 .header-contacts {
+  display: flex;
+  text-align: center;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
 }
 
-.header-contacts-link {
-  color: #ffffff;
+.header-logo-wrapper {
+  /* display: flex; */
+  margin-right: 179px;
+
+  padding-left: 20px;
 }
 
-.header-logo {
+.header-contacts-link {
+  margin-right: 33px;
   color: #ffffff;
 }
 
 .header-button {
+  margin-left: auto;
   font-family: inherit;
   color: #ffffff;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 22px;
   padding: 12px 6px;
+
+  min-width: 186px;
+}
+
+.header-nav-title {
+  display: flex;
+}
+
+.header-link {
+  margin-right: 32px;
+}
+
+.header-link:last-child {
+  margin-right: 0;
 }
 
 .header-nav-link {
+  display: block;
+  padding: 20px 0 20px 0;
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
@@ -98,12 +136,24 @@ body {
 /* Hero */
 
 .hero {
+  /* position: relative; */
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   padding: 226px 0 33px 0;
   color: var(--light-color-text);
   background-image: url("../img/header-screen.jpg");
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 81px;
+  left: 0;
+  background-color: #c4c4c4;
+  opacity: 0.3;
+  width: 100%;
+  height: 1px;
 }
 
 .hero > h1 {
