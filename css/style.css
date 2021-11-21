@@ -122,10 +122,19 @@ body {
 
 .hero-title {
   margin-bottom: 8px;
+  font-family: PT Serif;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 130%;
+  color: var(--light-color-text);
 }
 
 .hero-title-p {
   margin-bottom: 94px;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--light-color-text);
 }
 
 .hero-link {
