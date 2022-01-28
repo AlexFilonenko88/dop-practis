@@ -308,6 +308,10 @@ body {
   margin-bottom: 37px;
 }
 
+.directions-item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .directions-icon {
   margin-bottom: 16px;
 }
@@ -321,13 +325,21 @@ body {
 /* Suggestions */
 
 .suggestions {
-  background-color: green;
+  background-color: var(--light-color-text);
 }
+
+.suggestions-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .suggestions-title {
   font-family: PT Serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.33;
+  padding: 76px 0 56px 0;
 }
 
 .suggestions-title-link {
@@ -392,10 +404,6 @@ body {
   color: #333333;
 }
 
-.about-p-p {
-  /* margin-bottom: 55px; */
-}
-
 .about-second-text {
   display: none;
 }
@@ -436,6 +444,19 @@ body {
 
 /* Gallery */
 
+.wrapper__gallery {
+  display: flex;
+  align-items: baseline;
+}
+
+.gallery__list--button {
+  display: flex;
+}
+
+.gallery__link {
+  margin-left: auto;
+}
+
 .gallery {
   background-color: rgba(63, 169, 245, 0.07);
 }
@@ -445,20 +466,52 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 0.7;
+  padding: 44px 0 59px 0;
+}
+
+.gallery-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery--link__foto {
+  padding: 0 20px 32px 0;
+}
+
+.gallery--link__foto:nth-child(3n) {
+  padding: 0 0 32px 0;
 }
 
 /* Advantages */
 
-.advantages-title {
+.advantages--title__heading {
+  align-items: center;
+  padding: 80px 0 45px 0;
   font-family: PT Serif;
   font-weight: 700;
   font-size: 44px;
   line-height: 0.47;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.advantages-p {
+.leftimg {
+  float: left;
+  margin: 7px 7px 7px 0;
+}
+
+.advantages-p,
+.advantages-p-p {
   font-size: 18px;
   line-height: 1.22;
+  text-align: justify;
+  padding-bottom: 14px;
+}
+
+.advantages-p-p {
+  padding-bottom: 54px;
 }
 
 .advantages {
@@ -487,6 +540,7 @@ body {
   font-size: 20px;
   line-height: 1.05;
   margin-top: 1px;
+  padding-top: 10px;
 }
 
 .features-span {
@@ -499,16 +553,52 @@ body {
 
 /* Form */
 
-.form-title {
+.form {
+  background-color: #f5f5f7;
+}
+
+.form__title {
   font-family: PT Serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 0.7;
+  text-align: center;
+  padding: 48px 0 62px 0;
 }
 
 .form-button {
   background-color: #0061d9;
   color: var(--light-color-text);
+  width: 297px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 76px;
+}
+
+.form__label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form__label--list,
+.form__label--other {
+  margin: 0 46px 24px 0;
+}
+
+.form__label--input {
+  width: 256px;
+  height: 44px;
+}
+
+.form__label--checkbox {
+  margin-bottom: 20px;
+}
+
+.form__link--checkbox {
+  text-decoration: #76767a underline solid;
 }
 
 /* Footer */

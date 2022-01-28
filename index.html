@@ -88,7 +88,7 @@
       </section>
       <section class="categories">
         <div class="container">
-          <h2>Категории туров</h2>
+          <h2 class="visually-hidden">Категории туров</h2>
           <ul class="categories-list">
             <li class="categories-item">
               <a href="">
@@ -153,7 +153,9 @@
                   width="256"
                   alt="Турбаза6"
                 />
+                <div class="categories-container">
                 <h3 class="categories-title">Красоты Байкала</h3>
+                </div>
               </a>
             </li>
             <li class="categories-item">
@@ -300,7 +302,7 @@
       <section class="suggestions">
         <div class="container">
         <h2 class="suggestions-title">Популярные предложения</h2>
-        <ul>
+        <ul class="suggestions-link">
           <li>
             <a class="suggestions-title-link" href="#">
               <img
@@ -330,6 +332,7 @@
               <img
                 src="./img/qwe/ЭкскурсиявИволгинскийдацан1.jpg"
                 alt="Зимний однодневный тур"
+                width="256"
               />
               <h3 class="suggestions-title-h">
                 Зимний однодневный тур на Чивыркуйский залив
@@ -460,22 +463,27 @@
       <section class="map">
         <div class="container">
             <h2 class="map-title">Карта Байкала</h2>
-            <a class="map-a" href="#">
+            <div>
+                <script type="text/javascript" charset="utf-8" async
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0556011a4d879891336bc9fef73e0ad7833c8b150729b03371ee34dab22fba7e&amp;width=100%25&amp;height=379&amp;lang=ru_RU&amp;scroll=false"></script>
+
+            </div>
+            <!-- <a class="map-a" href="#">
             <img src="./img/map/изображение 2.jpg" alt="Карта Байкала" />
-            </a>
+            </a> -->
         </div>    
         </section>
 
     <section class="about">
         <div class="container">
             <h2 class="about-title">О Байкале</h2>
-            <p class="about-p">
+            <p class="about-p"  align="justify">
             Озеро Байкал – глубочайшее и древнейшее озеро планеты. Древние жители
             Прибайкалья называли его Священным морем и считали, что в Байкале нет
             дна, обожествляли и наделяли его мистическими свойствами. Именно здесь
             пронзительные чувства и скрытые способности человека находят выплеск.
             </p>
-            <p class="about-p-p">
+            <p class="about-p-p" align="justify">
             Познается что-то новое не только в природе, но и в самом себе. Многие
             посетившие Байкал люди утверждают, что озеро оказало большое влияние
             на их дальнейшую жизнь.
@@ -486,7 +494,7 @@
             <p class="about-second-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ullam culpa rem necessitatibus incidunt sequi, ipsam itaque doloremque quas blanditiis pariatur deleniti, sunt vel sit quis? Vitae, minus eius. Est! ipsum dolor sit amet consectetur adipisicing elit. Voluptates, fugiat?</p>
             <label class="about-label" for="about-checkbox">
               <span class="about-on">Читать подробней</span>
-              <span class="about-off">Скрыть</span>
+              <!-- <span class="about-off">Скрыть</span> -->
             </label>
 
 
@@ -497,55 +505,56 @@
 
       <section class="gallery">
         <div class="container">
-          <h2 class="gallery-foto">Фотогалерея</h2>
-          <a href="#">Перейти в раздел</a>
-          <ul>
-            <li>
-              <button type="button"></button>
-            </li>
+          <div class="wrapper__gallery">
+            <h2 class="gallery-foto">Фотогалерея</h2>
+            <a class="gallery__link" href="#">Перейти в раздел</a>
+            <ul class="gallery__list--button">
+              <li>
+                <button type="button"></button>
+              </li>
+              <li>
+                <button type="button"></button>
+              </li>
+            </ul>
+          </div>
 
-            <li>
-              <button type="button"></button>
-            </li>
-          </ul>
-
-          <ul>
-            <li>
+          <ul class="gallery-link">
+            <li class="gallery--link__foto">
               <img
                 src="./img/photogallety/Фотогалерея-1.jpg"
                 width="350"
                 alt="Фото1"
               />
             </li>
-            <li>
+            <li  class="gallery--link__foto">
               <img
                 src="./img/photogallety/Фотогалерея2.jpg"
                 width="350"
                 alt="Фото2"
               />
             </li>
-            <li>
+            <li  class="gallery--link__foto">
               <img
                 src="./img/photogallety/Фотогалерея3.jpg"
                 width="350"
                 alt="Фото3"
               />
             </li>
-            <li>
+            <li  class="gallery--link__foto">
               <img
                 src="./img/photogallety/Фотогалерея6.jpg"
                 width="350"
                 alt="Фото6"
               />
             </li>
-            <li>
+            <li  class="gallery--link__foto">
               <img
                 src="./img/photogallety/Фотогалерея5.jpg"
                 width="350"
                 alt="Фото5"
               />
             </li>
-            <li>
+            <li  class="gallery--link__foto">
               <img
                 src="./img/photogallety/Фотогалерея4.jpg"
                 width="350"
@@ -558,10 +567,10 @@
 
       <section class="advantages">
         <div class="container">
-          <h2>Преимущества отдыха с нами</h2>
-          <b class="advantages-title">Байкальский отдых с нами – это легко!</b>
-          <img src="./img/relax/Untitled-1 1.jpg" width="256" alt="Вода и горы" />
-          <img src="./img/relax/73 1.jpg" width="256" alt="Люди на отдыхе" />
+          <h2 class="visually-hidden">Преимущества отдыха с нами</h2>
+          <h3 class="advantages--title__heading">Байкальский отдых с нами – это легко!</h3>
+          <img class="leftimg" src="./img/relax/Untitled-1 1.jpg" width="256" alt="Вода и горы" />
+          <img class="leftimg"  src="./img/relax/73 1.jpg" width="256" alt="Люди на отдыхе" />
 
           <p class="advantages-p">
             На сайте туристического агентства «Байкальский отдых» вы найдете всю
@@ -592,7 +601,7 @@
             круглогодичные отапливаемые турбазы и различные зимние развлечения.
             Байкал зимой поражает кристальной чистотой и прозрачностью льда.
           </p>
-          <p class="advantages-p">
+          <p class="advantages-p-p">
             Туристы очень любят отмечать Новогодние праздники и Рождество на
             турбазах Байкала, так как новый год на Байкале отличается особым
             волшебством. Развлекательную новогоднюю программу готовит почти каждая
@@ -643,10 +652,54 @@
           </ul>
         </div>
       </section>
+
+      <!-- form -->
+
       <section class="form">
-        <h2 class="form-title">Забронируйте отдых на Байкале</h2>
-        <button class="form-button" type="button">Отправить заявку</button>
+        <div class="container">
+          <h2 class="form__title">Забронируйте отдых на Байкале</h2>
+          <form class="form__label">
+            <label class="form__label--list">
+              <input class="form__label--input" type="text" name="text" placeholder="Ваше имя" autofocus>
+            </label>
+            <label class="form__label--list">
+              <input class="form__label--input" type="tel" name="tel" placeholder="Телефон">
+            </label>
+            <label class="form__label--list">
+              <input class="form__label--input" type="email" name="email" placeholder="E-mail">
+            </label>
+            <label class="form__label--list">
+              <input class="form__label--input" type="text" name="text" placeholder="Местность Байкала">
+            </label>
+            <label class="form__label--list">
+              <input class="form__label--input" type="text" name="text" placeholder="Количество взрослых">
+            </label>
+            <label class="form__label--list">
+              <input class="form__label--input" type="text" name="text" placeholder="Количество детей, их возраст">
+            </label>
+            </form>
+            <form class="form__label">
+            <label class="form__label--other">
+              <input class="form__label--input" type="text" name="text" placeholder="Дата заезда">
+            </label>
+            <label class="form__label--other">
+              <input class="form__label--input" type="text" name="text" placeholder="Дата отъезда">
+            </label>
+            <label class="form__label--other">
+              <input class="form__label--input" type="text" name="text" placeholder="Комментарий">
+            </label>
+            <label class="">
+              <a class="form__link--checkbox" href="#">
+              <input class="form__label--checkbox" type="checkbox" name="checkbox">
+              <!-- <span class="backdrop-icon__checkbox"></span> -->
+              Соглашаюсь на обработку персональных данных
+              </a>
+            </label>
+          </form>
+          <button class="form-button" type="button">Отправить заявку</button>
+        </div>
       </section>
+      
     </main>
 
     <footer class="footer">
