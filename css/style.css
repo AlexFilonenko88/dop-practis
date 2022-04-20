@@ -650,4 +650,47 @@ body {
   font-size: 12px;
   line-height: 1.75;
   color: #ffffff;
+  text-align: left;
+}
+
+/* .footer-link-img {
+  text-align: right;
+} */
+
+.footer--link__title,
+.footer--wrapper__title,
+.footer--list--title {
+  display: flex;
+}
+
+.footer--wrapper__title {
+  padding-top: 32px;
+  border-top: 1px solid #ffffff;
+}
+
+.footer--link__title {
+  padding: 30px 0 18px 0;
+}
+
+.footer--list--li,
+.footer-link-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer--list--li {
+  margin-right: 62px;
+}
+
+.footer--wrapper__link > li {
+  margin-bottom: 17px;
+}
+
+.footer--wrapper__title-list > li {
+  margin-bottom: 7px;
+}
+
+.footer-title-p,
+.footer-title-other {
+  margin-bottom: 7px;
 }
